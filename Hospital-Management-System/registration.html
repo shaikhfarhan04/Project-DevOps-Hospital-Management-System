@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Create Account — Unity Hospital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/modern.css"/>
+</head>
+<body>
+<div data-site-nav></div>
+
+<div class="auth-wrap">
+  <aside class="auth-side">
+    <div>
+      <a href="index.html" class="brand"><span class="brand-mark"></span><span class="brand-name">Unity<small>Hospital</small></span></a>
+    </div>
+    <div>
+      <h2 class="text-grad">Your patient portal, reimagined.</h2>
+      <p class="text-dim">Book appointments, view prescriptions, track reports, and manage your family's care — all from one account.</p>
+      <ul style="list-style:none;padding:0;margin:28px 0 0;display:grid;gap:12px">
+        <li class="flex items-center gap-2"><span style="width:20px;height:20px;border-radius:50%;background:var(--grad-emerald);display:grid;place-items:center;color:#04060c;font-size:11px;font-weight:700">✓</span> Digital reports &amp; prescriptions</li>
+        <li class="flex items-center gap-2"><span style="width:20px;height:20px;border-radius:50%;background:var(--grad-emerald);display:grid;place-items:center;color:#04060c;font-size:11px;font-weight:700">✓</span> SMS &amp; WhatsApp reminders</li>
+        <li class="flex items-center gap-2"><span style="width:20px;height:20px;border-radius:50%;background:var(--grad-emerald);display:grid;place-items:center;color:#04060c;font-size:11px;font-weight:700">✓</span> Tele-consults with specialists</li>
+      </ul>
+    </div>
+    <div class="text-mute" style="font-size:13px">© Unity Hospital</div>
+  </aside>
+
+  <div class="auth-form-wrap">
+    <div class="auth-form reveal">
+      <h1>Create your account</h1>
+      <p class="muted">Already registered? <a href="login.html" style="color:var(--brand)">Sign in</a></p>
+      <form data-demo>
+        <div class="form-grid">
+          <div class="form-group"><label>First name</label><input class="form-control" required placeholder="Jane"/></div>
+          <div class="form-group"><label>Last name</label><input class="form-control" required placeholder="Doe"/></div>
+        </div>
+        <div class="form-group"><label>Email</label><input type="email" class="form-control" required placeholder="you@example.com"/></div>
+        <div class="form-group"><label>Password</label><input type="password" class="form-control" required placeholder="Minimum 8 characters"/></div>
+        <div class="form-group"><label>Confirm password</label><input type="password" class="form-control" required placeholder="Repeat password"/></div>
+        <label class="checkbox-row" style="margin:8px 0 20px"><input type="checkbox" required/> I agree to the <a href="terms.html" style="color:var(--brand)">Terms</a> &amp; <a href="privacy.html" style="color:var(--brand)">Privacy Policy</a></label>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Create account</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div data-site-footer></div>
+<script src="assets/js/modern.js"></script>
+</body>
+</html>

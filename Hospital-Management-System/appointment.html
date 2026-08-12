@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Book Appointment — Unity Hospital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/modern.css"/>
+</head>
+<body>
+<div data-site-nav></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb reveal"><a href="index.html">Home</a> <span>/</span> Book Appointment</div>
+    <h1 class="reveal" data-delay="1">Book an <span class="grad">appointment.</span></h1>
+    <p class="reveal" data-delay="2">Pick a department and a time — we'll confirm with the specialist and send reminders.</p>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container" style="max-width:960px">
+    <div class="glass reveal" style="padding:40px">
+      <form data-demo>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Full name</label>
+            <input class="form-control" required placeholder="Your name"/>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" required placeholder="you@example.com"/>
+          </div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Mobile</label>
+            <input class="form-control" required placeholder="+91 ..."/>
+          </div>
+          <div class="form-group">
+            <label>Purpose of appointment</label>
+            <input class="form-control" required placeholder="Consultation, follow-up, etc."/>
+          </div>
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Department</label>
+            <select class="form-control" required>
+              <option value="">Select a department</option>
+              <option>Cardiology</option>
+              <option>Dermatology &amp; Cosmetology</option>
+              <option>General Surgery</option>
+              <option>Health Checkup Packages</option>
+              <option>Neurology</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Preferred date</label>
+            <input type="date" class="form-control" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Preferred time slot</label>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px">
+            <label class="checkbox-row" style="justify-content:center;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);cursor:pointer"><input type="radio" name="slot" value="8-10"/>8 – 10 AM</label>
+            <label class="checkbox-row" style="justify-content:center;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);cursor:pointer"><input type="radio" name="slot" value="10-12"/>10 – 12 PM</label>
+            <label class="checkbox-row" style="justify-content:center;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);cursor:pointer"><input type="radio" name="slot" value="12-2"/>12 – 2 PM</label>
+            <label class="checkbox-row" style="justify-content:center;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);cursor:pointer"><input type="radio" name="slot" value="2-4"/>2 – 4 PM</label>
+            <label class="checkbox-row" style="justify-content:center;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);cursor:pointer"><input type="radio" name="slot" value="4-6"/>4 – 6 PM</label>
+            <label class="checkbox-row" style="justify-content:center;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);cursor:pointer"><input type="radio" name="slot" value="6-8"/>6 – 8 PM</label>
+            <label class="checkbox-row" style="justify-content:center;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);cursor:pointer"><input type="radio" name="slot" value="8-10pm"/>8 – 10 PM</label>
+          </div>
+        </div>
+        <p class="text-mute" style="font-size:13px;margin:8px 0 22px">Bookings available 8:00 AM – 10:00 PM. For outside-hours emergencies, our 24/7 ambulance service is always available.</p>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Request Appointment</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div data-site-footer></div>
+<script src="assets/js/modern.js"></script>
+</body>
+</html>
