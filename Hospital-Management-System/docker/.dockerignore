@@ -1,0 +1,15 @@
+.git
+.gitignore
+.github
+terraform/.terraform
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/*.tfvars
+kubernetes
+scripts
+README.md
+*.log
+.env
+.env.*
+.vscode
+.idea
