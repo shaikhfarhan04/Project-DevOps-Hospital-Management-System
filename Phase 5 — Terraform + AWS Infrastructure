@@ -1,4 +1,3 @@
-Absolutely. **Phase 5 is the foundation of the entire AWS environment.** We'll build it carefully rather than creating everything in one huge Terraform file.
 
 # Phase 5 — Terraform + AWS Infrastructure
 
