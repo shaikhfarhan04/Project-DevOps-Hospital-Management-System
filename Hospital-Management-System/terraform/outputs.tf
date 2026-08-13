@@ -21,3 +21,13 @@ output "private_subnet_ids" {
 output "availability_zones" {
   value = data.aws_availability_zones.available.names
 }
+
+output "ecr_repository_name" {
+  description = "ECR repository name"
+  value       = aws_ecr_repository.hospital_management.name
+}
+
+output "ecr_repository_url" {
+  description = "ECR repository URL"
+  value       = aws_ecr_repository.hospital_management.repository_url
+}
