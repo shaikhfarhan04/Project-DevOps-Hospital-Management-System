@@ -22,3 +22,32 @@ variable "vpc_cidr" {
   default     = "10.0.0.0/16"
 }
 
+variable "eks_cluster_version" {
+  description = "Kubernetes version for EKS"
+  type        = string
+  default     = "1.36"
+}
+
+variable "eks_node_instance_types" {
+  description = "EC2 instance types for EKS worker nodes"
+  type        = list(string)
+  default     = ["t3.small"]
+}
+
+variable "eks_desired_nodes" {
+  description = "Desired number of EKS worker nodes"
+  type        = number
+  default     = 3
+}
+
+variable "eks_min_nodes" {
+  description = "Minimum number of EKS worker nodes"
+  type        = number
+  default     = 3
+}
+
+variable "eks_max_nodes" {
+  description = "Maximum number of EKS worker nodes"
+  type        = number
+  default     = 6
+}
